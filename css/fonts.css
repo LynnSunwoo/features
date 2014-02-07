@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+
+@font-face {font-family:"BaronNeue-Normal";
+	src:url("../fonts/Baron_Neue_Normal_50.eot?") format("eot"),
+	url("../fonts/Baron_Neue_Normal_50.woff") format("woff"),
+	url("../fonts/Baron_Neue_Normal_50.ttf") format("truetype"),
+	url("../fonts/Baron_Neue_Normal_50.svg#BaronNeue-Normal") format("svg");
+	font-weight:normal;font-style:normal;}
+	
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}	
+

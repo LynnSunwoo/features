@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<!-- Links to CSS/Scripts -->
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+<link type="text/css" rel="stylesheet" href="css/fonts.css">
+<link type="text/css" rel="stylesheet" href="css/css.css">
+
+<script src="scripts/jquery-1.10.2.min.js"></script>
+<script src="scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<!-- for rotating image --><script src="scripts/jquery.imagecube.js"></script>
+<script src="scripts/script.js"></script>
+<title>CSS NEW FEATURES</title>
+
+</head>
+    
+<body>
+       
+    <!-- div cointaining nav on top -->
+    <div id="top">  
+    	<ul>
+        	<li><a href="#">reset</a></li>
+
+        </ul>
+    </div> <!-- top -->	
+    
+    <div id="wrapper">
+    	
+        
+        <!-- first feature page -->
+        <div id="mainOne">
+        	<h1 class="titles">Hover with <br>directions.</h1>
+            
+            <!-- page shows up when clicked -->
+            <div id="pageOne">
+            
+            <h2>Hover with directions.</h2>
+            	
+                
+                <!-- Hovering direction with CSS -->
+                <div id="one_css" class="smallBox">
+                	
+                    <div class="small_headers1">
+                    	<h3>CSS</h3>
+                    </div>
+                    <div class="small_containers1">
+                    	<div id="css_image_gal">
+                        	<div class="imageContainer imageContainer1" ><b></b><b></b><b></b><b></b><strong>This is the sliding overlay</strong></div> 
+                            <div class="imageContainer imageContainer2" ><b></b><b></b><b></b><b></b><strong>This is the sliding overlay</strong></div>
+                            <div class="imageContainer imageContainer3" ><b></b><b></b><b></b><b></b><strong>This is the sliding overlay</strong></div>
+                            <div class="imageContainer imageContainer4" ><b></b><b></b><b></b><b></b><strong>This is the sliding overlay</strong></div>    
+                        </div>
+                    </div>
+                    
+                </div> <!-- one_css -->
+                
+                <!-- Hovering direction with Jquery -->
+                <div id="one_script" class="smallBox">
+                	
+                    <div class="small_headers1">
+                    	<h3>Jquery</h3>
+                    </div>
+                    <div class="small_containers1">
+                    
+                    	<div id="jq_image_gal">
+                        	<div class="imageContainer imageContainer1" >
+                            	<b class="from_top"></b><b class="from_bot"></b><b class="from_left"></b><b class="from_right"></b><div class="for_jq">This is the sliding overlay</div></div> 
+                            <div class="imageContainer imageContainer2" >
+                            	<b class="from_top"></b><b class="from_bot"></b><b class="from_left"></b><b class="from_right"></b><div class="for_jq">This is the sliding overlay</div></div>
+                            <div class="imageContainer imageContainer3" >
+                            	<b class="from_top"></b><b class="from_bot"></b><b class="from_left"></b><b class="from_right"></b><div class="for_jq">This is the sliding overlay</div></div>
+                            <div class="imageContainer imageContainer4" >
+                            	<b class="from_top"></b><b class="from_bot"></b><b class="from_left"></b><b class="from_right"></b><div class="for_jq">This is the sliding overlay</div></div>    
+                        </div>
+                    	
+                    </div>      
+                </div> <!-- one_script -->
+                
+                <!-- Hovering direction descriptions -->
+                <div id="one_para" class="bigBox clearfix">
+                	<div id="one_head">
+                    	<h3>Description</h3>
+                    </div>
+                    <div class="para_text not">
+                    	<div id="available">
+                        <img src="images/check.png" alt="check">
+                        <p class="available">CSS Available <br>&nbsp;&nbsp;&nbsp; Firefox<br>&nbsp;&nbsp;&nbsp; Internet Explore</p>
+                        <span><img src="images/not.png" alt="check" id="why2"></span>
+                        <p class="notAvailable">CSS NOT Available <br>&nbsp;&nbsp;&nbsp; Chrome<br>&nbsp;&nbsp;&nbsp; Safari<br>&nbsp;&nbsp;&nbsp; Opera</p>                       
+                        
+                        </div>
+                        <div id="blah">
+                    	<p> When you hover over an image, the overlay will appear in the same direction to the direction of the mouse.  So if you hovered an image from top, overlay will appear from top, and if you hovered from right, overlay will appear from right side and slide in. <br>On the left, Same function was mimiced using Jquery functions "hide" and "show" and "slide" to make do the same job, but will be available in all the browsers.<br><a href="http://www.sitepoint.com/forums/showthread.php?1172173-CSS-only-Direction-aware-hover"  target="_blank">Link to CSS Tutorial</a> <br> <a href="http://api.jqueryui.com/blind-effect/"  target="_blank">Link to JQuery Tutorial</a></p>
+                        </div>
+                    </div>
+                </div> <!-- one_para -->
+            
+            </div> <!-- pageOne -->  
+            
+            <!-- arrow comes up when this div gets smaller -->
+            <div id="arrowLeft">
+            </div> <!-- arrow left -->
+            
+        </div> <!-- main One -->
+
+        <!-- 2nd feature page -->
+        <div id="mainTwo">
+      	  <h1 class="titles">3d cube <br>rotations.</h1>
+          
+          <div id="pageTwo">
+          
+          <h2>3D cube rotations</h2>
+                
+                <!-- done in CSS -->
+                <div id="two_css"  class="smallBox">
+                	
+                    <div class="small_headers2">
+                    	<h3>CSS</h3>
+                    </div>
+                    
+                      <!-- cointains the slider and images -->
+                      <div class="small_containers1">
+                      
+                      <!-- slider to the images -->
+                          <div class="slider">
+                          <input type="radio" id="slide1" name="slide" checked><label for="slide1" class="forRotations"></label>
+                          <input type="radio" id="slide2" name="slide"><label for="slide2" class="forRotations"></label>
+                          <input type="radio" id="slide3" name="slide"><label for="slide3" class="forRotations"></label>
+                          <input type="radio" id="slide4" name="slide"><label for="slide4" class="forRotations"></label>
+                          <ul>
+                              <li><img src="images/birdIsland-1.png" alt="bird island"></li>                            	
+                              <li><img src="images/birdIsland-2.png" alt="bird island"></li>
+                              <li><img src="images/birdIsland-3.png" alt="bird island"></li>
+                              <li><img src="images/birdIsland-4.png" alt="bird island"></li>
+                          </ul>
+                      </div>​
+                    	
+                    </div>
+                
+                </div> <!-- two_css -->
+                
+                <!-- done in jquery -->
+                <div id="two_script"  class="smallBox">
+                
+                	<div class="small_headers2">
+                    	<h3>jquery</h3>
+                    </div>
+                    <div class="small_containers1">
+                    	
+                        <div id="rot-con">
+                        <div id="defaultCube" >
+                             <img src="images/birdIsland-1.png" alt="bird island" id="spring">
+                            <img src="images/birdIsland-2.png" alt="bird island" id="summer">
+                            <img src="images/birdIsland-3.png" alt="bird island" id="fall">
+                            <img src="images/birdIsland-4.png" alt="bird island" id="winter">
+                        </div>
+                        </div>
+                        
+                        <div id="but-con">
+                         	<div class="forRotations2" id="click1"></div>
+                            <div class="forRotations2" id="click2"></div>
+                            <div class="forRotations2" id="click3"></div>
+                            <div class="forRotations2" id="click4"></div>
+                        </div>
+                    </div>
+                
+                </div> <!-- two_script -->
+                
+                
+                <!-- descriptions -->
+                <div id="two_para" class="bigBox clearfix">
+                	<div id="two_head">
+                    <h3>Description</h3>
+                    </div>
+                    <div class="para_text not">
+                    	<div id="available2">
+                        <img src="images/check.png" alt="check">
+                        <p class="available">CSS Available <br>&nbsp;&nbsp;&nbsp; Chrome<br>&nbsp;&nbsp;&nbsp; Safari<br>&nbsp;&nbsp;&nbsp; Opera</p>
+                        <span><img src="images/not.png" alt="check" id="why"></span>
+                        <p class="notAvailable">CSS NOT Available <br>&nbsp;&nbsp;&nbsp; Internet Explore<br>&nbsp;&nbsp;&nbsp; Firefox</p>
+                        
+                        </div>
+                        <div id="blah2">
+                        
+                         <p> If you click on the square buttons, you can scroll through images, that are in shape of a cube. CSS allows to rotate images in any directions and using it you can make a cube. Using transition, also it looks like cube is rotating.  However, not all the browser can view this.<br> Using JQuery plug in that allows to rotate images in all the browsers, made square buttons and give a on click fuction that will scroll the box to the right image.  <br><a href="http://css3.bradshawenterprises.com/transforms/"  target="_blank">Link to another CSS tutorial</a><br><a href="http://keith-wood.name/imageCube.html" target="_blank">Link to JQuery Tutorial</a></p>
+                        </div>
+                    </div>
+                    
+                </div> <!-- two_para -->    
+          
+          </div> <!-- pageTwo --> 
+              
+            <div id="arrowRight">
+            </div> <!-- arrow left -->               
+          
+        </div><!-- mainTwo -->
+   
+    </div> <!-- wrapper -->
+    
+
+
+</body>
+
+</html>

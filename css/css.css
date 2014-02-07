@@ -1,0 +1,530 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* COLORS */
+/*
+white	 	: #ecf0f1
+Gren		: #68c39f
+Dark green	: #5aa384
+blue		: #449bb5
+Dark blue	: #378091
+
+*/
+
+
+/* Baisc page layout */
+
+html {
+	height: 100%;
+	}
+
+body {
+	font-family: "BaronNeue-Normal", Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+	}	
+	
+#top {
+	width: 100%;
+	height: 50px;
+	}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+
+	}
+
+/* each side covering half of the page */	
+#mainOne {
+	width: 50%;
+	min-height: 800px;
+	height: 100%;
+	display: block;
+	background-color: #68c39f;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	color: #ecf0f1;
+	float: left;
+	padding-bottom: 30px;
+	}
+
+/* 2nd page */
+#mainTwo {
+	width: 50%;
+	min-height: 800px;
+	height: 100%;
+	display: block;
+	background-color: #449bb5;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	color: #ecf0f1;
+	float: left;
+	padding-bottom: 30px;
+
+	}	
+	
+#mainOne:hover, #mainTwo:hover { cursor: pointer; }
+/* side titles that disappears when side is clicked */	
+#mainOne h1 { position: relative; top: 10%; left: 10%; }	
+#mainTwo h1 { position: relative; top: 10%; left: 10%;  }
+
+h1 { font-size: 4em; margin: 20px;}
+
+/* feature one  */
+#pageOne {
+	width: 960px;
+	margin: 20px auto;	
+	position: relative;	
+	top: 20000px;
+	height: auto;
+	}
+
+/*arrows to move bewteen pages*/
+#arrowLeft {
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	display: block;
+	opacity: 0;
+	background-image:url(../images/left_arrow.png);
+	background-repeat: no-repeat;
+	width: 45px;
+	height: 60px;
+	}	
+
+
+/* featur Two */
+
+#pageTwo {
+	width: 960px;
+	margin: 20px auto;	
+	position: relative;	
+	top: 20000px;
+	height: auto;
+	}
+
+/*arrows to move bewteen pages*/
+#arrowRight {
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	display: block;
+	opacity: 0;
+	background-image: url(../images/right_arrow.png);
+	width: 45px;
+	height: 60px;
+	background-repeat: no-repeat;
+	}
+	
+/* contents boxes */
+
+h2 { margin: 20px; font-size: 3em; }
+
+.smallBox {
+	width: 440px;
+	float: left;
+	margin: 20px;
+	}
+
+.bigBox {
+	width: 920px;
+	margin: 20px;
+	}
+	
+.bigBox a:hover { color :red ; }	
+
+/*colors for headr*/
+
+.small_headers1  { background-color: #5aa384; height:52px;	}
+
+h3{ text-align: center; font-size:2.2em; }
+
+.small_containers1 {
+	background-color: #ecf0f1;
+	color: black;
+	height: 370px;
+	position: relative;
+	display: block;
+	}
+
+.small_headers2 {background-color: #378091; height: 52px; }		
+
+#one_head { background-color: #5aa384; height:52px;	}
+#two_head { background-color: #378091; height:52px;	}
+
+
+.para_text { height: 185px; background-color: #ecf0f1;	color: black;  }
+
+
+#css_image_gal { position: relative; margin: 0 auto; height: 340px; width: 340px; padding-top: 10px; }	
+#jq_image_gal { position: relative; margin: 0 auto; height: 340px; width: 340px; padding-top: 10px; }	
+#jquery_image_gal img {  float: left; padding :10px }	
+
+.para_text {
+	font-family: 'open_sanslight',Verdana, Geneva, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	display: block;
+	position: relative;
+	}
+.para_text p { padding :10px; }
+
+#available, #available2 {
+	float: left;
+	width: 20%;
+
+	}
+#blah, #blah2 {
+	float: left;
+	width: 80%;
+	}	
+
+.not img {
+	position: relative;
+	left: 10px;
+	top: 10px;
+	}
+
+#why,#why2 { top: -20px;}	
+	
+#available p, #available2 p {	position: relative;
+	top: -28px;
+	left: 30px;}	
+	
+#available p:nth-of-type(2), #available2 p:nth-of-type(2) { top: -58px; }	
+	
+.available { color: #060; }
+
+.notAvailable { color: #930; }	
+
+/* Nav */
+
+#top ul { display: block; margin: 0 auto; width: 120px; }
+
+#top a, #top a:visited {
+	text-decoration: none;
+	float: left;
+	font-size: 2.5em;
+	 padding-bottom: 10px; 
+	}
+	
+#top a:hover {
+	color: #F30;
+	}	
+
+/*clearfix*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+
+
+/**********************************
+ Feature1: hovering with direction 
+***********************************/
+
+/* image containers */
+.imageContainer {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	margin: 10px;
+	overflow: hidden;
+	float: left;
+	}
+	
+/* putting images as a bg */	
+.imageContainer1 { background-image: url(../images/bird_1.jpg); background-repeat: no-repeat;}	
+.imageContainer2 { background-image: url(../images/bird_2.jpg); background-repeat: no-repeat;}
+.imageContainer3 { background-image: url(../images/bird_3.jpg); background-repeat: no-repeat;}
+.imageContainer4 { background-image: url(../images/bird_4.jpg); background-repeat: no-repeat;}
+
+
+/* using B to detect the directions */ 
+/*b will be invisible strips around the boxs*/	
+b {
+	display: block;
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	z-index: 2;
+	}
+
+/* butting each b to the sides of the image*/
+/* first b : top  hover */	
+b:nth-of-type(1) { top:0 }
+/* second b : bot  hover */	
+b:nth-of-type(2) { bottom:0 }
+/* third b : left  hover */	
+b:nth-of-type(3) {
+	top: 0;
+	width: 20px;
+	height: 150px;
+	}
+/* fourth b : right  hover */
+b:nth-of-type(4) {
+	top: 0;
+	width: 20px;
+	height: 150px;
+	left: auto;
+	right: 0
+	}
+
+/* fills up the div when b is hovered */
+b:hover {
+	height: 150px;
+	width: 150px;
+	z-index: 99;
+	}
+
+/* hides the hover text when not hovered */
+strong {
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	color: #68c39f;
+	position: absolute;
+	top: -150px;
+	font-size: 2em;
+	background-color: #ecf0f1;
+	opacity: 0.7;
+	}	
+	
+.for_jq {
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	color: #68c39f;
+ 	position: absolute;
+	font-size: 2em;
+	background-color: #ecf0f1;
+	opacity: 0.7;
+	display: none;
+	}	
+
+/* when hovered  from top, show hover from the top */
+b:nth-of-type(1):hover ~ strong {
+	-moz-animation:down .3s ease-in-out forwards;
+	-webkit-animation: down .3s ease-in-out forwards;
+	 animation: down .3s ease-in-out forwards;
+	}
+
+@keyframes down { 
+	from {
+		 transform: translateY(0px);
+		 opacity:0;
+		}
+	to {
+		transform: translateY(150px);
+		opacity:0.5;
+	}
+	}
+
+/* hovering from the bottom */
+b:nth-of-type(2):hover ~ strong {
+	 -moz-animation:up .3s ease-in-out forwards;
+	 -webkit-animation: up .3s ease-in-out forwards;
+	 animation: up .3s ease-in-out forwards;
+	}
+
+@keyframes up { 
+	from {
+		 transform: translateY(300px);
+		 opacity:0;
+	}
+	to {
+		transform: translateY(150px);
+		opacity:0.5;
+	}
+	}
+
+/*hovering from right side*/
+b:nth-of-type(3):hover ~ strong {
+	 -moz-animation:left .3s ease-in-out forwards;
+	 -webkit-animation: left .3s ease-in-out forwards;
+	 animation: left .3s ease-in-out forwards;
+	 top:0;
+	}
+
+@keyframes left { 
+	from {
+		 transform: translateX(-150px);
+		 opacity:0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity:0.5;
+	}
+	}
+
+/*hovering from left side*/
+b:nth-of-type(4):hover ~ strong {
+	 -moz-animation:right .3s ease-in-out forwards;
+	 -webkit-animation: right .3s ease-in-out forwards;
+	 animation: right .3s ease-in-out forwards;
+	 top:0;
+	 left:auto;
+	 right:0;
+}
+
+@keyframes right { 
+	from {
+		 transform: translateX(150px);
+		 opacity:0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity:0.5;
+	}	
+}
+
+
+
+	
+/**********************************
+ Feature2: 3D IMAGE ROTATIONS 
+***********************************/
+
+/*slider box */
+.slider {
+    height: 220px;
+	margin: 0px auto;
+    position: relative;
+    text-align: center;
+    width: 220px;
+	padding-top: 55px;
+	}
+	
+.slider input {position: relative;}
+
+/* hides the radio buttons and make squares buttons with label */
+input[type=radio] { display:none; }	
+
+/* labels instead of the radio button */
+.forRotations {
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-color: #378091;
+	position: relative;
+	top: 245px;
+	padding: 4px;
+	margin: 4px;
+	z-index: 10;
+	}
+	
+.forRotations:hover { cursor: pointer; background-color: #449bb5;}	
+	
+.slider label:nth-of-type(1) { margin-left: 60px;}	
+
+.slider ul {
+    height: 220px;
+    position: relative;
+    width: 220px;
+    -webkit-transform: perspective(1000);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 1s;
+	transform: perspective(1000);
+	transform-style:preserve-3d;
+	transition: 1s;
+}
+
+/* Position and roate each side of the images so it will form in to a cube shape (just the sides ) */
+.slider li {
+    left: 0;
+  	list-style: none;
+    position: absolute;
+    -webkit-transform: translateZ(110px);
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-style: preserve-3d;
+	transform: translateZ(110px) ;
+	transform-origin: 0 0;
+	transform-style: preserve-3d;
+}
+
+.slider li:nth-child(2) {
+    -webkit-transform: rotateY(-90deg) translateX(-110px) translateZ(-220px);
+	transform: rotateY(-90deg) translateX(-110px);
+	}
+	
+.slider li:nth-child(3) {
+    -webkit-transform: rotateY(-180deg)translateX(-220px) translateZ(110px);
+	transform: rotateY(-180deg)translateX(-220px) translateZ(110px);
+	}
+	
+.slider li:nth-child(4) {
+    -webkit-transform: rotateY(-270deg)translateX(-110px);
+	transform: rotateY(-270deg)translateX(-110px) translateZ(220px);
+	}
+	
+.slider img {
+    height: 220px;
+    width: 220px;
+    vertical-align: top;
+	}
+
+/*if you click the 2nd button, 2nd image will show up in center */
+#slide2:checked ~ ul {
+    -webkit-transform: perspective(1000) rotateY(-90deg);
+	transform: perspective(1000) rotateY(90deg);
+	}
+/*if you click the 3rd button, 3rd image will show up in center */
+#slide3:checked ~ ul {
+    -webkit-transform: perspective(1000) rotateY(-180deg);
+	transform: perspective(1000) rotateY(180deg);
+	}
+/*if you click the 4th button, 4th image will show up in center */
+#slide4:checked ~ ul {
+    -webkit-transform: perspective(1000) rotateY(-270deg);
+	transform: perspective(1000) rotateY(270deg);
+	}
+	
+	
+/** silder for jq**/
+
+/* seting box sizes same to the css ones */
+#rot-con { position: relative;
+	background-color: #ecf0f1;
+	color: black;
+
+	position: relative;
+	display: block;
+	padding-top: 40px;
+}
+#defaultCube {
+	height: 245px;
+	width: 245px;
+	margin: 0 auto;
+	}
+	
+#defaultCube img { height: 245px; width: 245px; }
+
+#but-con { width: 125px; position: relative; margin:20px auto;}
+
+/* create same 4 squre buttons */
+.forRotations2 {
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-color: #378091;
+	position: relative;
+	padding: 4px;
+	margin: 4px;
+	z-index: 10;
+	}
+.forRotations2:hover {  cursor: pointer; background-color: #449bb5; }	
